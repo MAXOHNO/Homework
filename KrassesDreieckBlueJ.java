@@ -4,6 +4,7 @@ public void krassesDreieck(int length) {
             // Erstellung der Leerzeichen vor den Buchstaben
             for (int j = i; j > 0; j--) {
                 System.out.print(" ");
+                // Bei Zahlen ab 10 muss ein Leerzeichen mehr gemacht werden, da diese zwei Zeichen breit sind
                 if (length > 9) {
                     System.out.print(" ");
                 }
