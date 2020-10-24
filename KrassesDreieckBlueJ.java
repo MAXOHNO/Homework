@@ -4,6 +4,9 @@ public void krassesDreieck(int length) {
             // Erstellung der Leerzeichen vor den Buchstaben
             for (int j = i; j > 0; j--) {
                 System.out.print(" ");
+                if (length > 9) {
+                    System.out.print(" ");
+                }
             }
         
             // mD = momentaner Durchlauf (fängt bei 0 an)
@@ -22,8 +25,8 @@ public void krassesDreieck(int length) {
     
                 for(int k = 0; k < aDWB; k++) {
                     System.out.print(i);
-                    if (i < 10) {
-                        System.out.print(" ");
+                    if (i < 10 && length > 9) {
+                        System.out.print(i);
                     }
                 }
             } else {
